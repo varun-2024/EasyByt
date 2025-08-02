@@ -2,6 +2,16 @@ import express from "express";
 import type { Request, Response } from "express";
 import cors from "cors";
 import "dotenv/config";
+import mongoose from "mongoose";
+
+mongoose
+  .connect(process.env.MONGO_URL as string)
+  .then(() => {
+    console.log("Connected to Database");
+  })
+  .catch((err) => {
+    console.log("Error Connecting to Database", err);
+  });
 
 const port = 8080;
 const app = express();
