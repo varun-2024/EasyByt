@@ -12,6 +12,12 @@ function Layout(props: LayoutProps) {
 
 export default Layout; */
 
-type Props = {};
-const layout = ({}: Props) => {};
+type Props = { children: React.ReactNode };
+const layout = ({ children }: Props) => {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Header />
+    </div>
+  );
+};
 export default layout;
