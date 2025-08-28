@@ -16,9 +16,9 @@ export default function MobileNav() {
       <SheetTrigger>
         <Menu className="text-orange-500" />
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="space-y-3">
         <SheetTitle>
-          <span>Welcome to EASYBYT</span>
+          <span className="space-y-3">Welcome to EASYBYT</span>
         </SheetTitle>
         <Separator />
         <SheetDescription className="flex">
